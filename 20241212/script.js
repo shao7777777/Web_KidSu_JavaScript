@@ -85,3 +85,36 @@ let varString10 = "10";
 
 console.log(varNumber == varNumber10);
 console.log(varString === varString10); //嚴格比較，資料型態不同，結果為false
+
+console.log("%c判斷式", "color:red");
+// 判斷式語法
+// if (布林值) { 布林值等於 true 執行此區塊 block }
+if (true) {
+    console.log("這裡是判斷式");
+}
+
+var score = 49;
+// if 要在最上面，只能用一次
+// else if 無限次數
+// else 要在最下面，只能用一次
+if (score >= 60) {
+    console.log("逃生成功");
+}
+else if (score>= 50) {
+    console.log("來補考");
+}
+else {
+    console.log("哈哈明年見");
+}
+
+//練習
+let HP = 59;
+if (HP >= 60) {
+    console.log("安全");
+}
+else if (HP > 0) {
+    console.log("警告");
+}
+else {
+    console.log("死亡");
+}
