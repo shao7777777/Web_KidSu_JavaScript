@@ -154,3 +154,19 @@ var varCount = 5;
 varCount = 7;       // 可重新賦予值
 var varCount = 8;   // 可重新定義(不建議)
 console.log(varCount);
+
+// 作用域 Scope {} 代表程式作用的範圍(通常指大括號)
+// let 與 const 的作用域都在 {} 區塊內
+
+{
+    let letTest = 1;
+    const constTest = 2;
+    var varTest = 3;
+    console.log("let:", letTest);
+    console.log("const:", constTest);
+    console.log("var:", varTest);
+}
+
+// console.log("let:", letTest);        //錯誤：超出作用域
+// console.log("const:", constTest);    //錯誤：超出作用域
+console.log("var:", varTest);
