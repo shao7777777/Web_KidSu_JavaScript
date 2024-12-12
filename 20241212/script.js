@@ -131,3 +131,20 @@ for (let index = 0; index < 5; index++) {
     console.log("迴圈",index);
     // alert("警告")
 }
+
+// 變數 let
+let letCount = 1;
+letCount = 2;
+letCount = 3
+
+// 常數 const (不可改變的值)
+const constCount = 1;
+// constCount = 2;      // 產生錯誤 ，原因：常數不可改變
+
+// 不可重新定義
+// let letCount = 10;               // 產生錯誤 ，原因：重複宣告
+// const const constCount = 10;     // 產生錯誤 ，原因：重複宣告
+
+// 常數命名習慣會使用權大寫並使用底線區隔
+const PI = 3.14;
+const WEB_FONT_SIZE = 24;
