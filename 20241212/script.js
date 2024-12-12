@@ -118,3 +118,16 @@ else if (HP > 0) {
 else {
     console.log("死亡");
 }
+
+console.log("%c迴圈", "color:gold");
+// for 迴圈
+// for 語法:
+// for (初始值; 條件; 迭代器) {程式區塊}
+for (let index = 0; index < 5; index++) {
+    console.log("迴圈",index);
+}
+
+for (let index = 0; index < 5; index++) {
+    console.log("迴圈",index);
+    // alert("警告")
+}
