@@ -148,3 +148,9 @@ const constCount = 1;
 // 常數命名習慣會使用權大寫並使用底線區隔
 const PI = 3.14;
 const WEB_FONT_SIZE = 24;
+
+//變數 var
+var varCount = 5;
+varCount = 7;       // 可重新賦予值
+var varCount = 8;   // 可重新定義(不建議)
+console.log(varCount);
