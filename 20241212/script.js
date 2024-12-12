@@ -28,6 +28,60 @@ let fontColor = "#f63";     //用""包起來
 console.log(test);
 console.log(fontColor);
 
-//設定變數
+//設定變數 set
 test = 9;
 console.log(test);
+
+// 資料類型
+let varNumber = 1.5;    // 1. 數值
+let varString = "字串"; // 2. 字串
+let varBool = true;     // 3. 布林值(true、false)
+
+console.log(varNumber);
+console.log(varString);
+console.log(varBool);
+
+// typeof 獲得資料型態
+console.log(typeof varNumber);
+console.log(typeof varString);
+console.log(typeof varBool);
+
+// 運算子
+// 加減乘除
+console.log(10 + 3);
+console.log(10 - 3);
+console.log(10 * 3);
+console.log(10 / 3);    // 取商
+console.log(10 % 3);    // mod 取餘數
+console.log(10 ** 3);   // 次方
+
+// 指定運算子(指定符號=)
+// 1+2+3 數學內的等號，左右兩邊一定相等，由右至左執行
+// = 指定。左右兩邊不一定相等，由右至左執行
+let numberTest = 99 + 1;
+console.log(numberTest);
+numberTest++;
+console.log(numberTest);
+numberTest--;
+console.log(numberTest);
+numberTest += 10;       // 適用於+-*/%
+console.log(numberTest);
+numberTest -= 10;
+console.log(numberTest);
+
+// 比較運算子
+console.log("%c比較運算子", "color:blue"); // %c 後面可以指定顏色(與CSS)
+// < > <= >= === !==(執行結果是布林值)
+console.log(100 > 1);
+console.log(100 < 1);
+console.log(100 <= 1);
+console.log(100 >= 1);
+console.log(100 === 1); // 等於
+console.log(100 !== 1); // 不等於
+
+// == 與 === (嚴格比較，數值與類型都要相同)
+let varNumber10 = 10;
+let varString10 = "10";
+
+console.log(varNumber == varNumber10);
+console.log(varString === varString10); //嚴格比較，資料型態不同，結果為false
