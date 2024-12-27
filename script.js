@@ -259,3 +259,16 @@ const square = function (number) {
 }
 console.log(square(9));
 console.log(square(321));
+
+//線習題: BMI
+//一般函式
+function bmi(weight, height) {
+    return weight / square(height);
+}
+console.log(Math.floor(bmi(60, 1.68)));
+//表達式函式
+const bmiExpression = function (weight, height) {
+    return weight / square(height);
+}
+console.log(Math.floor(bmiExpression(60, 1.68)));
+console.log(Math.floor(bmiExpression(70, 1.90)));
