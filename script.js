@@ -185,3 +185,34 @@ logLine();
 logLine();
 logLine();
 logLine();
+
+// 對照組(比較不適合的寫法)
+//需求提升時必須寫很多個函式
+function logLineRed() {
+    console.log("%c-----我是分隔線-----", "color:red");
+}
+
+function logLineGreen() {
+    console.log("%c-----我是分隔線-----", "color:green");
+}
+
+logLineRed();
+logLineGreen();
+
+// 程式要注意的事情：思考未來的維護性、擴充性、可讀性
+
+// (比較適合的寫法) 讓函式更加彈性
+// function 函式名稱 (參數) {}
+function logLineWWithColor(color) {
+    console.log("%c-----我是分隔線-----", `color: ${color}`);
+}
+logLineWWithColor("blue");
+logLineWWithColor("black");
+
+
+// 參數的預設值
+function logLineWWithColor(color = "gold") {
+    console.log("%c-----我是分隔線-----", `color: ${color}`);
+}
+logLineWWithColor("orange");
+logLineWWithColor();   //呼叫時沒有輸入參數會以預設值帶入(gold)
