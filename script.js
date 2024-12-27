@@ -216,3 +216,46 @@ function logLineWWithColor(color = "gold") {
 }
 logLineWWithColor("orange");
 logLineWWithColor();   //呼叫時沒有輸入參數會以預設值帶入(gold)
+
+
+//表達式函式 (⭐較常使用)
+console.log("%c表達式函式", "color:gold");
+
+//表達式函式語法
+// const 變數 = 函式 (參數) {}
+const print = function (color = "red") {
+    console.log("%c測試", `color: ${color}`);
+}
+
+//使用 變數名稱 (參數) 來呼叫表達式函式
+print("green");
+print("gray");
+
+//多個參數
+const printMessage = function (color = "red", message = "這是預設文字") {
+    console.log(`%c${message}`, `color: ˋ${color}`);
+}
+printMessage();
+printMessage("gold");
+printMessage("gold", "訊息");
+
+//想要使用預設顏色，文字要使用 "訊息"
+printMessage("訊息");               //錯誤
+printMessage(undefined, "訊息");    //正確結果 (要掠過某個參數，必須使用關鍵字「undefined」)
+
+// 有傳回值的函式，必須使用一個 return 關鍵字將值傳回
+function double(number) {
+    return number * 2;
+}
+//使用方法1：用變數將數值傳回儲存
+const result = double(10);
+console.log(result);
+//使用方法2：直接傳回函式當作數值使用
+console.log(double(7));
+
+// 表達式函式傳回函式
+const square = function (number) {
+    return number * number;
+}
+console.log(square(9));
+console.log(square(321));
