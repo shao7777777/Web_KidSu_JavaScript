@@ -272,3 +272,20 @@ const bmiExpression = function (weight, height) {
 }
 console.log(Math.floor(bmiExpression(60, 1.68)));
 console.log(Math.floor(bmiExpression(70, 1.90)));
+
+
+// 箭頭函式 =>
+const bmiArrow = (weight, height) => {
+    return weight / square(height);
+}
+console.log(Math.floor(bmiArrow(40, 1.60)));
+console.log(Math.floor(bmiArrow(45, 1.65)));
+
+
+// 提升 hosting
+// 在定義函式以前就能夠呼叫
+// 一般函式會提升
+console.log(Math.floor(bmi(60, 1.68)));
+// 表達式與箭頭函式不會提升，不能在定義以前呼叫(相對安全)
+// console.log("表達式函式：", Math.floor(bmiExpression(60, 1.68)));
+// console.log("箭頭函式：", Math.floor(bmiArrow(60, 1.68)));
